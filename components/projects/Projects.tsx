@@ -2,7 +2,7 @@
 
 import { projects } from '@/constants/projects';
 import ProjectBtn from './ProjectBtn';
-import ProjectCard from './ProjectCard';
+import ImageCarousel from './ImageCarousel';
 import ProjectDetails from './ProjectDetails';
 import { useState } from 'react';
 
@@ -17,8 +17,8 @@ const Projects = () => {
     <div className="">
       <div className="relative">
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-evenly lg:justify-center lg:gap-8">
-          <ProjectCard
-            src={activeProject.screenshot}
+          <ImageCarousel
+            images={activeProject.images}
             title={activeProject.title}
           />
 
