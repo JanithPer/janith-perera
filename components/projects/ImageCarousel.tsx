@@ -23,7 +23,7 @@ const ImageCarousel = ({ images, title }: ImageCarouselProps) => {
   if (images.length === 0) return null;
 
   return (
-    <div className="relative z-10 h-[400px] w-[350px] overflow-hidden rounded-xl shadow-2xl md:mt-32">
+    <div className="relative z-10 w-full max-w-[640px] overflow-hidden rounded-xl shadow-2xl md:mt-32 aspect-video">
       <Image
         src={images[currentIndex]}
         alt={`${title} - screenshot ${currentIndex + 1}`}
