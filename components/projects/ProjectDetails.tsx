@@ -61,7 +61,7 @@ const ProjectDetails = ({
             {listStacks.map((s) => (
               <p
                 key={s}
-                className="text-right font-Silkscreen text-[12px] font-normal uppercase text-whiteice"
+                className="text-right font-silkscreen text-[12px] font-normal uppercase text-whiteice"
               >
                 {s}
               </p>
@@ -77,7 +77,7 @@ const ProjectDetails = ({
           </p>
         </CardContent>
 
-        <CardFooter className="mx-auto mt-12 w-fit gap-8 font-Silkscreen">
+        <CardFooter className="mx-auto mt-12 w-fit gap-8 font-silkscreen">
           {github && (
             <Button
               asChild

@@ -13,7 +13,7 @@ const TechTag = ({
       gradientColor={gradientColor}
       gradientOpacity={0.25}
     >
-      <p className="font-Silkscreen text-sm text-whiteice">{title}</p>
+      <p className="font-silkscreen text-sm text-whiteice">{title}</p>
     </MagicCard>
   );
 };

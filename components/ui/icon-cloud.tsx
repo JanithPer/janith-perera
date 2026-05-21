@@ -76,7 +76,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, 'dark'),
     );
-  }, [data, theme]);
+  }, [data]);
 
   return (
     // @ts-ignore

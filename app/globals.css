@@ -1,6 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --color-whiteice: var(--white--ice);
+  --color-solitude: var(--solitude);
+  --color-tundora: var(--tundora);
+  --color-codgray: var(--cod--gray);
+  --color-mineshaft: var(--mine--shaft);
+  --color-dovegray30: var(--dove--gray-30);
+  --color-oceangreen: var(--ocean--green);
+  --color-celtic: var(--celtic);
+  --color-bush: var(--bush);
+  --color-blackbean: var(--black--bean);
+  --color-junglegreen: var(--jungle--green);
+  --color-greenpea: var(--green--pea);
+  --color-jewel: var(--jewel);
+  --color-dodgerblue: var(--dodger--blue);
+  --color-azureradiance: var(--azure--radiance);
+  --color-scienceblue: var(--science--blue);
+  --color-endeavour: var(--endeavour);
+  --color-downriver: var(--downriver);
+  --color-bluezodiac: var(--blue--zodiac);
+  --color-amethyst: var(--amethyst);
+  --color-fuchsiapink: var(--fuchsia--pink);
+  --color-cerise: var(--cerise);
+  --color-disco: var(--disco);
+  --color-wineberry: var(--wine--berry);
+  --color-loulou: var(--loulou);
+  --color-revolver: var(--revolver);
+  --color-antiquebronze: var(--antique--bronze);
+  --color-bracken: var(--bracken);
+  --color-valencia: var(--valencia);
+  --color-brickred: var(--brick--red);
+  --color-crownofthorns: var(--crown-of--thorns);
+  --color-roseofsharon: var(--rose-of--sharon);
+  --color-brown: var(--brown);
+  --color-supernova: var(--supernova);
+  --color-tanhide: var(--tan--hide);
+  --color-silverchalice: var(--silver--chalice);
+
+  --font-inter: var(--font-inter);
+  --font-silkscreen: var(--font-silkscreen);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+
+  --animate-gradient: gradient 8s linear infinite;
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+}
 
 body {
   background-color: hsl(0, 0%, 8%);
@@ -80,7 +155,7 @@ body {
     @apply border-border;
   }
   body {
-    @apply text-foreground font-Inter text-xl;
+    @apply text-foreground font-inter text-xl;
   }
 }
 
@@ -102,7 +177,7 @@ body {
   }
 
   .text-code {
-    @apply font-Silkscreen;
+    @apply font-silkscreen;
   }
 
   .flex-between {
@@ -153,6 +228,26 @@ body {
   }
 }
 
+@keyframes gradient {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
 
-
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}

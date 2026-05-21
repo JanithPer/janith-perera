@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="mt-12 flex flex-col-reverse gap-8 md:flex-row md:justify-center md:gap-20 lg:gap-32">
         <div className="flex w-fit flex-col items-start gap-4">
-          <p className="font-Silkscreen font-normal uppercase text-gray-400 md:mt-8 md:text-2xl">
+          <p className="font-silkscreen font-normal uppercase text-gray-400 md:mt-8 md:text-2xl">
             Janith.P · software engineer
           </p>
           <div>
@@ -39,19 +39,19 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-2 md:flex-col">
-          <p className="font-Silkscreen font-normal uppercase text-gray-400">
+          <p className="font-silkscreen font-normal uppercase text-gray-400">
             Building...
           </p>
-          <p className="w-fit rounded-md bg-celtic px-2 font-Silkscreen text-[18px] font-normal uppercase">
+          <p className="w-fit rounded-md bg-celtic px-2 font-silkscreen text-[18px] font-normal uppercase">
             <span className="text-oceangreen">Well designed</span>
           </p>
-          <p className="w-fit rounded-md bg-downriver px-2 font-Silkscreen text-[18px] font-normal uppercase">
+          <p className="w-fit rounded-md bg-downriver px-2 font-silkscreen text-[18px] font-normal uppercase">
             <span className="text-dodgerblue">well architected</span>
           </p>
-          <p className="w-fit rounded-md bg-antiquebronze px-2 font-Silkscreen text-[18px] font-normal uppercase">
+          <p className="w-fit rounded-md bg-antiquebronze px-2 font-silkscreen text-[18px] font-normal uppercase">
             <span className="text-foreground">and scalable</span>
           </p>
-          <p className="w-fit rounded-md bg-revolver px-2 font-Silkscreen text-[18px] font-normal uppercase">
+          <p className="w-fit rounded-md bg-revolver px-2 font-silkscreen text-[18px] font-normal uppercase">
             <span className="text-violet-400/85">web apps</span>
           </p>
         </div>
