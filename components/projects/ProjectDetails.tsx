@@ -40,6 +40,7 @@ const ProjectDetails = ({
   cardBg,
 }: ProjectDetailsTypes) => {
   const [hoveredId, setHoveredId] = useState('');
+  const hasLiveLink = Boolean(live);
 
   const listStacks = useMemo(() => {
     return stack.length > 6 ? [...stack.slice(0, 6), 'and more...'] : stack;
@@ -67,11 +68,11 @@ const ProjectDetails = ({
             ))}
           </div>
 
-          <div className="text-center md:col-span-4 xl:self-start xl:justify-self-start	">
+          <div className="text-center md:col-span-4 xl:self-start xl:justify-self-start">
             <p className="text-whiteice">{description}</p>
           </div>
 
-          <p className="text-[14px] text-tundora xl:self-end	xl:justify-self-start">
+          <p className="text-[14px] text-tundora xl:self-end xl:justify-self-start">
             {date}
           </p>
         </CardContent>
@@ -88,31 +89,30 @@ const ProjectDetails = ({
               className="transition-all"
             >
               <Link href={github} target="_blank">
-                Github »
+                Github
               </Link>
             </Button>
           )}
 
-          <Button
-            asChild
-            style={{
-              backgroundColor: `${hoveredId === '2' ? btnBgHover : btnBg}`,
-            }}
-            onMouseEnter={() => setHoveredId('2')}
-            onMouseLeave={() => setHoveredId('')}
-            className="transition-all"
-          >
-            <Link href={live} target="_blank">
-              Live »
-            </Link>
-          </Button>
+          {hasLiveLink && (
+            <Button
+              asChild
+              style={{
+                backgroundColor: `${hoveredId === '2' ? btnBgHover : btnBg}`,
+              }}
+              onMouseEnter={() => setHoveredId('2')}
+              onMouseLeave={() => setHoveredId('')}
+              className="transition-all"
+            >
+              <Link href={live} target="_blank">
+                Live
+              </Link>
+            </Button>
+          )}
         </CardFooter>
       </Card>
     </div>
   );
 };
+
 export default ProjectDetails;
-
-
-
-
