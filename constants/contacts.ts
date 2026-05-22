@@ -27,7 +27,8 @@ export const socialLinks = [
     id: 'resume',
     icon: '/resume.svg',
     alt: "Link to Janith's resume",
-    path: 'https://drive.google.com/file/d/1YiBWrY2cMZRaHtbeiHZSjYpizlhXqgEr/view?usp=sharing',
+    path: '/cv/Janith%20Perera%20Software%20Engineer%20CV.pdf',
+    download: true,
   },
   {
     id: 'github',
