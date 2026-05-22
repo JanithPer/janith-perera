@@ -2,7 +2,7 @@ import Projects from './Projects';
 
 const ProjectsSection = () => {
   return (
-    <section className="relative py-24">
+    <section id="projects" className="relative scroll-mt-24 py-24">
       <div className="mb-12 space-y-8 px-6 md:mb-0 xl:px-56">
         <h2 className="h2-bold">Projects</h2>
         <p className="regular-paragraph max-w-[835px]">
