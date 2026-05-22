@@ -7,7 +7,7 @@ const NavLinks = () => {
         Projects
       </Link>
 
-      <Link className="py-4 md:py-0 md:hover:opacity-70" href="/">
+<Link className="py-4 md:py-0 md:hover:opacity-70" href="/blog">
         Blog
       </Link>
     </nav>

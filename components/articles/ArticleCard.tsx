@@ -9,25 +9,22 @@ import Link from 'next/link';
 
 const ArticleCard = () => {
   return (
-    <Link
-      href="https://medium.com/@janithperera/a-quick-guide-to-ruby-on-rails-migrations-with-examples-8b3da8077ed7"
-      target="_blank"
-    >
+    <Link href="/blog">
       <Card className="max-w-[1200px] border-none bg-background shadow-2xl transition-all hover:-translate-y-1.5 hover:bg-[#1a1a1a4d]">
         <CardHeader className="space-y-3">
           <CardTitle className="text-white">
-            A Quick Guide to Ruby on Rails Migrations with examples!!
+            Why Convex is 10x Better Than Firebase for Modern Apps
           </CardTitle>
           <CardDescription className="text-silverchalice">
-            How to set up a Rails app with PostgreSQL, create and configure
-            migrations to define and modify database tables, and manage
-            relationships between them. The tutorial emphasizes Rails
-            conventions, automatic features, and how to handle schema changes
-            effectively.
+            Convex combines a reactive real-time database, serverless
+            functions, and built-in TypeScript support out of the box,
+            eliminating Firebase's painful scaling surprises, complex security
+            rules, and fragmented ecosystem. Here's why Convex is the
+            Firebase killer you've been waiting for.
           </CardDescription>
         </CardHeader>
         <CardFooter className="text-gray-400">
-          6 min read · Jan 24, 2023
+          Coming soon
         </CardFooter>
       </Card>
     </Link>
