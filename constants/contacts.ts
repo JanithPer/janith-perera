@@ -4,21 +4,21 @@ export const contacts = [
     title: 'X - tweeter',
     icon: '/tweeter.svg',
     description: 'Stay updated with my latest posts and thoughts.',
-    path: 'https://x.com/PereraJanith',
+    path: 'https://x.com/thejanithperera',
   },
   {
     id: 'linkedin',
     title: 'LinkedIn',
     icon: '/linkedin.svg',
     description: "Let's connect and explore opportunities together.",
-    path: 'https://www.linkedin.com/in/Janithperera/',
+    path: 'https://www.linkedin.com/in/janithperera04',
   },
   {
     id: 'email',
     title: 'Email',
     icon: '/email.svg',
     description: 'Feel free to reach out to me directly via email.',
-    path: 'mailto:janithperera@gmail.com',
+    path: 'mailto:janithper9@gmail.com',
   },
 ];
 
@@ -34,31 +34,25 @@ export const socialLinks = [
     id: 'github',
     icon: '/github.svg',
     alt: "Link to Janith's gitHub profile",
-    path: 'https://github.com/Janith.P',
+    path: 'https://github.com/JanithPer',
   },
   {
     id: 'tweeter',
     icon: '/tweeter.svg',
     alt: "Link to Janith's tweeter profile",
-    path: 'https://x.com/PereraJanith',
+    path: 'https://x.com/thejanithperera',
   },
   {
     id: 'linkedin',
     icon: '/linkedin.svg',
     alt: "Link to Janith's linkedin profile",
-    path: 'https://www.linkedin.com/in/Janithperera/',
+    path: 'https://www.linkedin.com/in/janithperera04',
   },
   {
-    id: 'wellfound',
-    icon: '/wellfound.svg',
-    alt: "Link to Janith's wellfound profile",
-    path: 'https://wellfound.com/u/JanithPerera',
-  },
-  {
-    id: 'medium',
-    icon: '/medium.svg',
-    alt: "Link to Janith's medium profile",
-    path: 'https://medium.com/@janithperera',
+    id: 'email',
+    icon: '/email.svg',
+    alt: "Email Janith",
+    path: 'mailto:janithper9@gmail.com',
   },
 ];
 

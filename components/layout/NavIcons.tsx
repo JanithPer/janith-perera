@@ -5,7 +5,7 @@ const NavIcons = () => {
   return (
     <div className="flex items-center gap-4 md:gap-8">
       <Link
-        href="https://github.com/Janith.P"
+        href="https://github.com/JanithPer"
         className="group flex items-center justify-center gap-x-1.5"
         target="_blank"
       >
@@ -20,7 +20,7 @@ const NavIcons = () => {
         </span>
       </Link>
       <Link
-        href="https://www.linkedin.com/in/Janithperera/"
+        href="https://www.linkedin.com/in/janithperera04"
         className="group flex items-center justify-center gap-x-1.5"
         target="_blank"
       >
