@@ -8,9 +8,19 @@ import { useState } from 'react';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
+  const [projectImageIndices, setProjectImageIndices] = useState<Record<string, number>>({});
 
   const handleActiveProject = (id: string) => {
     setActiveProject(projects.find((project) => project.id === id)!);
+  };
+
+  const currentIndex = projectImageIndices[activeProject.id] || 0;
+
+  const handleIndexChange = (index: number) => {
+    setProjectImageIndices((prev) => ({
+      ...prev,
+      [activeProject.id]: index,
+    }));
   };
 
   return (
@@ -20,6 +30,8 @@ const Projects = () => {
           <ImageCarousel
             images={activeProject.images}
             title={activeProject.title}
+            currentIndex={currentIndex}
+            setCurrentIndex={handleIndexChange}
           />
 
           {/* Buttons */}

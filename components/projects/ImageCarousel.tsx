@@ -1,23 +1,27 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 type ImageCarouselProps = {
   images: string[];
   title: string;
+  currentIndex: number;
+  setCurrentIndex: (index: number) => void;
 };
 
-const ImageCarousel = ({ images, title }: ImageCarouselProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
+const ImageCarousel = ({
+  images,
+  title,
+  currentIndex,
+  setCurrentIndex,
+}: ImageCarouselProps) => {
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
   };
 
   if (images.length === 0) return null;
