@@ -5,7 +5,7 @@ export default function BlogPage() {
         <h1 className="h1-bold">Blog</h1>
         <p className="regular-paragraph mt-8 max-w-[600px]">
           Blogs coming soon. Stay tuned for articles on modern technologies,
-          front-end development, and more.
+          all-round development, and more.
         </p>
         <p className="font-silkscreen mt-16 text-sm uppercase tracking-widest text-silverchalice">
           Janith.Perera
