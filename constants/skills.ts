@@ -13,7 +13,7 @@ export const skills = [
       background: 'var(--black--bean)',
     },
     content:
-      'I specialize in front-end architectures that scale as your applications and teams grow, using modular structures and efficient workflows.',
+      'I specialize in architecting systems that scale as your applications and teams grow, using modular structures and efficient workflows.',
   },
   {
     id: 'Performance',
@@ -27,7 +27,7 @@ export const skills = [
       background: 'var(--downriver)',
     },
     content:
-      'I ensure front-end applications are optimized for speed, responsiveness, and seamless user experiences as they are efficient for developers.',
+      'I ensure applications are optimized for speed, responsiveness, and seamless user experiences while remaining efficient for developers.',
   },
   {
     id: 'modularity',
@@ -41,7 +41,7 @@ export const skills = [
       background: 'var(--rose-of--sharon-2)',
     },
     content:
-      'I create reusable components, libraries, and tools that empower teams to build consistent and efficient front-end solutions at scale.',
+      'I create reusable components, libraries, and tools that empower teams to build consistent and efficient solutions at scale.',
   },
 ];
 
